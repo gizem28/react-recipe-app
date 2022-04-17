@@ -18,14 +18,14 @@ const Home = () => {
   const getData = async () => {
       if (query !== "") {
       const result = await axios.get(url);
-      if (result.data.more) {
-        alert("The type of food you are looking for is not available. Try again");
-      }
+      // if (result.data.more) {
+      //   alert("The type of food you are looking for is not available. Try again");
+      // }
       setRecipes(result.data.hits);
       // console.log(result.data.hits);
       setQuery("")
-  }
-  else {alert("Please fill the form");}
+      }
+      else {alert("Please fill the form");}
   }
  
   return (
