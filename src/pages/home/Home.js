@@ -1,30 +1,33 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 import axios from "axios";
 import Header from "../../components/header/Header";
-// import { HomeImg, MainContainer, ImgDiv } from "./HomeStyle";
-// import homeSvg from "../../assets/home.svg";
-// import RecipeCardComp from "./RecipeCardComp";
+import { HomeImg, MainContainer, ImgDiv } from "./HomeStyle";
+import homesvg from "../../assets/home.svg";
+import RecipeCardComp from "./RecipeCardComp";
+
+
 const mealTypes = ["Breakfast", "Lunch", "Dinner", "Snack", "Teatime"];
-const APP_ID = "f4bfaf3e";
-const APP_KEY = "a7101a58138f89247076f042189d7ac8 ";
+const APP_ID = "757e49e0";
+const APP_KEY = "e408a6d42691def7ea7a5fd7f0b2c63b";
 const Home = () => {
   const [query, setQuery] = useState("");
   const [recipes, setRecipes] = useState();
   const [meal, setMeal] = useState(mealTypes[0].toLowerCase());
   const url = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&mealType=${meal}`;
+  
   const getData = async () => {
-    if (query !== "") {
+      if (query !== "") {
       const result = await axios.get(url);
-      console.log(result.data.hits);
       if (result.data.more) {
-        console.log("no food a this name");
+        alert("The type of food you are looking for is not available. Try again");
       }
       setRecipes(result.data.hits);
-      setQuery("");
-    } else {
-      console.log("Please fill the form");
-    }
-  };
+      // console.log(result.data.hits);
+      setQuery("")
+  }
+  else {alert("Please fill the form");}
+  }
+ 
   return (
     <div>
       <Header
@@ -35,7 +38,7 @@ const Home = () => {
         setMeal={setMeal}
         meal={meal}
       />
-      {/* {recipes ? (
+      {recipes ? (
         <MainContainer>
           {recipes.map((recipe, index) => (
             <RecipeCardComp key={index} recipe={recipe.recipe} />
@@ -43,9 +46,9 @@ const Home = () => {
         </MainContainer>
       ) : (
         <ImgDiv>
-          <HomeImg src={homeSvg} />
+          <HomeImg src={homesvg} />
         </ImgDiv>
-      )} */}
+      )}
     </div>
   );
 };
