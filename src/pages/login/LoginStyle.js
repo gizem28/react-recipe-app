@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import img from '../../assets/Recipe App8.png';
+// import img from '../../assets/Recipe App8.png';
 
 export const LoginContainer = styled.div`
   /* background-image: url('https://picsum.photos/id/292/200/300'); */

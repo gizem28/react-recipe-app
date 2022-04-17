@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Nav, Logo, Menu, Hamburger, MenuLink, HomeImg, ImgDiv, Ex} from './NavbarStyles'
+import { Nav, Logo, Menu, Hamburger, MenuLink, HomeImg, ImgDiv} from './NavbarStyles'
 import recipe from '../../assets/Recipe App4.png'
 
 const Navbar = () => {
