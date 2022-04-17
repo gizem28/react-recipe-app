@@ -10,7 +10,7 @@ export const MainContainer = styled.div`
 `;
 export const RecipeCard = styled.div`
   height: 300px;
-  background: #E1F1DD;
+  background: #EEEEEE;
   padding: 5px;
   border-radius: 3px;
   width: 300px;
@@ -18,8 +18,8 @@ export const RecipeCard = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin: 10px;
-  box-shadow: 8px 8px 5px black;
+  margin: 30px;
+  box-shadow: 6px 6px 4px black;
   &:hover {
     box-shadow: none;
     transition: all 0.3s ease-in;
@@ -30,7 +30,9 @@ export const RecipeImage = styled.img`
   border-radius: 10px;
 `;
 export const Button = styled.button`
-  background-color: #00ADB5;
+  background-color: #F0A500;
+  font-size: 1rem;
+  font-weight: bolder;
   padding: 5px;
   outline: none;
   height: 2rem;

@@ -1,13 +1,19 @@
 import React, {useState} from 'react'
-import { Nav, Logo, Menu, Hamburger, MenuLink } from './NavbarStyles'
+import { Nav, Logo, Menu, Hamburger, MenuLink, HomeImg, ImgDiv, Ex} from './NavbarStyles'
+import recipe from '../../assets/Recipe App4.png'
 
 const Navbar = () => {
     const [isOpen, setIsOpen]= useState(false)
     return (
+        <div>
+        <ImgDiv>
+          <HomeImg src={recipe} />
+        </ImgDiv>
+          
         <Nav>
             <Logo to="/">
-                <i>{"<WEB>"}</i>
-                <span> recipe</span>
+                <i>Recipe</i>
+                <span> Web App</span>
             </Logo>
             <Hamburger onClick={()=>setIsOpen(!isOpen)}>
                 <span/>
@@ -16,10 +22,11 @@ const Navbar = () => {
             </Hamburger>
             <Menu isOpen={isOpen}>
                 <MenuLink to="/about">About</MenuLink>
-                <MenuLink to={{pathname:"https://github.com/gizem28"}}>Github</MenuLink>
-                <MenuLink to="/login">Logout</MenuLink>
+                <MenuLink as ="a" href="https://github.com/gizem28"  target="_blank">Github</MenuLink>
+                <MenuLink to="/login">Login</MenuLink>
             </Menu>
         </Nav>
+        </div>
     )
 }
 

@@ -1,21 +1,24 @@
 import styled from 'styled-components';
+import img from '../../assets/Recipe App8.png';
 
 export const LoginContainer = styled.div`
-  background-image: url('https://picsum.photos/1600/900');
+  /* background-image: url('https://picsum.photos/id/292/200/300'); */
   background-repeat: no-repeat;
-  height: 100vh;
-  background-size: cover;
+  height: 90vh;
+  background-size:cover;
+  /* background-size: cover; */
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom:10rem
 `;
 
 export const FormContainer = styled.div`
   width: 600px;
   min-width: 600px;
   height: 600px;
-  background-color: rgba(0, 173, 181, 0.5);
+  background-color: rgb(0, 0, 0, 0.5);
   border-radius: 50%;
   border: 2px solid #e1f1dd;
   padding: 5px;

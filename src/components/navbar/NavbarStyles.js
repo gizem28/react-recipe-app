@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 export const Nav = styled.div`
+  margin:0px;
   padding: 0 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background: #E1F1DD;
+  background: #FFFFFF;
   border-radius: 0 0 10px 10px;
   height: 75px;
   font-size: 2rem;
@@ -18,7 +19,7 @@ export const Hamburger = styled.div`
   span {
     height: 4px;
     width: 25px;
-    background: #00ADB5;
+    background:  #1B1A17;;
     margin-bottom: 4px;
     border-radius: 5px;
   }
@@ -31,17 +32,37 @@ export const MenuLink = styled(Link)`
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  color: #02475E;
+  color:  #1B1A17;;
   transition: all 0.3s ease-in;
   font-size: 2rem;
   font-family: 'Girassol', sans-serif;
   &:hover {
-    color: #00ADB5;
+    color: #F0A500;
     font-weight: bold;
   }
   @media (max-width: 768px) {
-    background-color: #E1F1DD;
-    border: 1px solid #00ADB5;
+    background-color: #FFFFFF;
+    border: 1px solid #F0A500;
+    border-radius: 10px;
+    width: 100%;
+  }
+`;
+export const Ex = styled.a`
+  padding: 1rem 2rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color:  #1B1A17;;
+  transition: all 0.3s ease-in;
+  font-size: 2rem;
+  font-family: 'Girassol', sans-serif;
+  &:hover {
+    color: #F0A500;
+    font-weight: bold;
+  }
+  @media (max-width: 768px) {
+    background-color: #FFFFFF;
+    border: 1px solid #F0A500;
     border-radius: 10px;
     width: 100%;
   }
@@ -61,7 +82,7 @@ export const Menu = styled.div`
 `;
 export const Logo = styled(Link)`
   padding: 1rem 0;
-  color: #393E46;
+  color:  #1B1A17;
   text-decoration: none;
   font-weight: 800;
   font-size: 2rem;
@@ -72,6 +93,19 @@ export const Logo = styled(Link)`
     font-family: 'Girassol', sans-serif;
     font-weight: 400;
     font-size: 2rem;
-    color: #00ADB5;
+    padding-left: 1rem;
+    color: #1B1A17;
   }
 `;
+
+export const ImgDiv = styled.div`
+  /* display: flex;
+  justify-content: center;
+  margin: 50px; */
+  margin:0px;
+`;
+export const HomeImg = styled.img`
+   width: 100%; 
+   height:300px;
+  margin:0px;
+  `;

@@ -6,7 +6,7 @@ export const AboutContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 80px);
+  /* min-height: calc(100vh - 80px); */
   line-height: 2;
   span {
     color: white;
@@ -17,7 +17,7 @@ export const AboutContainer = styled.div`
 
 export const InfoContainer = styled.div`
   text-align: right;
-  margin: 0 10px;
+  /* margin: 0 10px; */
   max-width: 1000px;
   border: 1px solid white;
   padding: 25px;

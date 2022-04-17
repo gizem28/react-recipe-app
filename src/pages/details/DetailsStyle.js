@@ -5,7 +5,7 @@ export const DetailContainer = styled.div`
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  background: #00adb5;
+  /* background: #00adb5; */
   min-height: calc(100vh - 75px);
   /* height: fit-content; */
   padding: 5px;
@@ -18,9 +18,9 @@ export const DetailPart = styled.div`
   flex-wrap: wrap;
   align-items: center;
   margin: 1rem;
-  border: 1px solid white;
+  border: 1px solid black;
   border-radius: 5px;
-  background-color: #e1f1dd;
+  /* background-color:  */
   /* height: calc(100vh - 300px); */
   @media (max-width: 1250px) {
     /* justify-content: center;
@@ -30,7 +30,7 @@ export const DetailPart = styled.div`
 `;
 
 export const ImgContainer = styled.div`
-  border: 1px solid #00adb5;
+  border: 1px solid  #E45826;;
   padding: 10px;
   border-radius: 3px;
   margin: 2rem;
@@ -44,6 +44,7 @@ export const ImgContainer = styled.div`
 
 export const HeaderContainer = styled.div`
   display: flex;
+  color: #F0A500;
   justify-content: space-evenly;
   margin: 25px;
   font-size: 3rem;

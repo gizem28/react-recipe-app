@@ -4,10 +4,10 @@ export const HeaderContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #00ADB5;
+  background:#161616;
 `;
 export const MainHeader = styled.h2`
-  margin-top: 1rem;
+  margin-top: 0rem;
   font-size: 3rem;
 `;
 export const FormContainer = styled.form`
@@ -30,17 +30,21 @@ export const FoodInput = styled.input`
   font-size: 2rem;
 `;
 export const Button = styled.button`
-  background-color: #E1F1DD;
-  padding: 5px;
+ 
+  background-color: #F0A500;
+  border: 1px solid white;
+  color :white;
+  padding: 7px;
   outline: none;
   height: 3rem;
-  border: none;
+  /* border: none; */
   margin: 5px;
   border-radius: 3px;
   cursor: pointer;
   font-size: 2rem;
   &:hover {
-    background-color: #00ADB5;
+    /* background-color: #F0A500; */
+     background-color:#E45826;
     transition: all 0.3s ease-in;
     border: 1px solid white;
   }
