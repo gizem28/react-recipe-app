@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Header from "../../components/header/Header";
-import { HomeImg, MainContainer, ImgDiv } from "./HomeStyle";
+// import { HomeImg, MainContainer, ImgDiv } from "./HomeStyle";
 // import homeSvg from "../../assets/home.svg";
 // import RecipeCardComp from "./RecipeCardComp";
 const mealTypes = ["Breakfast", "Lunch", "Dinner", "Snack", "Teatime"];
