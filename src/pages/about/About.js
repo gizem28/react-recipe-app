@@ -5,7 +5,7 @@ import codingSvg from "../../assets/coding.svg"
 const About = () => {
     return (
       <AboutContainer>
-          <StyledImage src={codingSvg}/>
+          <StyledImage src={codingSvg} alt="About Page Image"/>
           <HeaderContainer>
           <h1>About Software Developer <span>Helen Kuttery</span> </h1>
           </HeaderContainer>
